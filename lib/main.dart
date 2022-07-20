@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'Screen/login_screen.dart';
 
 void main() async {
-  //WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
 }
