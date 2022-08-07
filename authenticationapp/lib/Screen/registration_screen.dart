@@ -1,4 +1,4 @@
-import 'package:authenticationapp/Screen/home_screen.dart';
+
 import 'package:authenticationapp/Screen/login_screen.dart';
 import 'package:authenticationapp/model/user_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -145,6 +145,7 @@ class _RegistrationState extends State<Registration> {
           return("Please Enter valid password(Min. 6 character");
 
         }
+        return null;
       },
       onSaved: (value){
         passwordEditingController.text =value!;
